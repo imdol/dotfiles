@@ -1,3 +1,4 @@
+! Bind right Control to Alt_R for majority of keyboards
 clear control
 clear mod1
 keycode 105 = Alt_R Meta_R Alt_R Meta_R
