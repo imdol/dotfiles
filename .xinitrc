@@ -1,4 +1,4 @@
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
-# exec startkde
+# exec startplasma-x11
 # exec i3
 # exec startxfce4
