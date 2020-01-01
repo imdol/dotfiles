@@ -8,3 +8,8 @@
 alias ls='ls --color=auto'
 # PS1='[\u@\h \W]\$ '
 PS1='\[\033[1;36m\]\u\[\033[0;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[0;31m\]\$\[\033[0m\] '
+
+# local bin
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
