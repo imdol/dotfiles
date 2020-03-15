@@ -13,6 +13,11 @@ if [ $(command -v rg) ]; then
     alias grep='rg'
 fi
 
+if [ $(command -v xclip) ]; then
+    alias c='xclip'
+    alias v='xclip -o'
+fi
+
 # nvm path
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
