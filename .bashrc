@@ -6,8 +6,10 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-# PS1='[\u@\h \W]\$ '
-PS1='\[\033[1;36m\]\u\[\033[0;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[0;31m\]\$\[\033[0m\] '
+
+# bash color prompt
+PS1="\[\033[38;5;29m\]\u\[$(tput sgr0)\]\[\033[38;5;196m\]@\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;48m\]\h\[$(tput sgr0)\]\[\033[38;5;49m\]:\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;126m\]\w\[$(tput sgr0)\]\[\033[38;5;196m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+
 
 if [ $(command -v rg) ]; then
     alias grep='rg'
@@ -17,6 +19,8 @@ if [ $(command -v xclip) ]; then
     alias c='xclip'
     alias v='xclip -o'
 fi
+
+alias emocs='emacs -nw -q'
 
 # nvm path
 export NVM_DIR="$HOME/.nvm"
