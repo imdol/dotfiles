@@ -1,5 +1,5 @@
 #
-# ~/.bashrc
+>0;115;0c# ~/.bashrc
 #
 
 # If not running interactively, don't do anything
@@ -18,6 +18,14 @@ fi
 if [ $(command -v xclip) ]; then
     alias c='xclip'
     alias v='xclip -o'
+fi
+
+if [ $(command -v chromium) ]; then
+    alias chromium='chromium --incognito'
+fi
+
+if [ $(command -v firefox) ]; then
+    alias firefox='firefox --private-window'
 fi
 
 alias emocs='emacs -nw -q'
