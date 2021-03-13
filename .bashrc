@@ -1,7 +1,3 @@
-#
->0;115;0c# ~/.bashrc
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
