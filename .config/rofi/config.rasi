@@ -1,0 +1,142 @@
+configuration {
+	show-icons:      true;	
+	sidebar-mode:    true;
+}
+
+* {
+  	background-color:            rgb(18, 30, 37);
+	text-color:                  #d3d7cf;
+	selbg:                       rgb(0, 86, 136);
+	actbg:                       rgb(22, 37, 46);
+	urgbg:                       #e53935;
+	winbg:			     #26c6da;
+
+	selected-normal-foreground:  @winbg;
+	normal-foreground:           @text-color;
+	selected-normal-background:  @actbg;
+	normal-background:           @background-color;
+
+	selected-urgent-foreground:  @background-color;
+	urgent-foreground:           @text-color;
+	selected-urgent-background:  @urgbg;
+	urgent-background:           @background-color;
+
+	selected-active-foreground:  @winbg;
+	active-foreground:           @text-color;
+	selected-active-background:  @actbg;
+	active-background:           @selbg;
+
+	line-margin:                 0;
+	line-padding:                0;
+	separator-style:             "none";
+	hide-scrollbar:              "true";
+	margin:                      0px;
+	padding:                     0px;
+	font:            "Roboto medium 10";
+}
+
+window {
+	location:	 north;
+	anchor:		 north;
+	x-offset: 	 0px;
+	orientation: 	 horizontal;
+	children:	 [mainbox];
+	padding:	 1px 1px 1px 1px;
+	background-color:    #000000;
+	height:		     10%;
+	width:		     25%;
+}
+
+mainbox {
+	spacing:  0em;
+	padding:  0px;
+	width: 	  0px;
+	children: [ inputbar, listview ];
+	expand: true;
+}
+
+button selected {
+	background-color: @active-background;
+	text-color:       @background-color;
+}
+
+inputbar {
+     children: [ entry ];
+}
+
+textbox-prompt-colon {                                                
+     text-color: inherit;
+     expand: false;                                                    
+     margin: 0 0 0 0;
+ }  
+
+listview {
+	spacing: 0;
+	dynamic: false;
+	cycle:   true;
+	scrollbar: true;
+}
+
+element { 
+	padding: 0px;
+	border:  0 0 0 0;
+	
+}
+
+entry {
+	expand:			true;
+	text-color:     	@normal-foreground;
+	background-color: 	rgb(25, 41, 51);
+	vertical-align: 	0;
+	padding:        	0px;
+	font:            	"Roboto medium 10";
+	
+}
+
+element normal.normal {
+	background-color: @normal-background;
+	text-color:       @normal-foreground;
+}
+
+element normal.urgent {
+	background-color: @urgent-background;
+	text-color:       @urgent-foreground;
+}
+
+element normal.active {
+	background-color: @active-background;
+	text-color:       @active-foreground;
+}
+
+element selected.normal {
+	background-color: @selected-normal-background;
+	text-color:       @selected-normal-foreground;
+	padding: 	  0px;
+	border:           0 0 0 0;
+	border-color:	    @active-background;
+}
+
+element selected.urgent {
+	background-color: @selected-urgent-background;
+	text-color:       @selected-urgent-foreground;
+}
+
+element selected.active {
+	background-color: @selected-active-background;
+	text-color:       @selected-active-foreground;
+}
+
+element alternate.normal {
+	background-color: @normal-background;
+	text-color:       @normal-foreground;
+}
+
+element alternate.urgent {
+	background-color: @urgent-background;
+	text-color:       @urgent-foreground;
+}
+
+element alternate.active {
+	background-color: @active-background;
+	text-color:       @active-foreground;
+}
