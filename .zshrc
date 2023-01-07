@@ -15,4 +15,3 @@ alias emocs='emacs -nw -q'
 
 autoload -Uz compinit
 compinit
-

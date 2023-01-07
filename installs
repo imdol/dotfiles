@@ -1,0 +1,30 @@
+# init packages
+zsh pulseaudio pulseaudio-alsa xorg xorg-server iwd git bspwm sxhkd polybar rofi dunst alacritty neofetch openssh emacs vi linux-headers linux-firmware linux sudo base base-devel gnupg cmake
+
+# creating user
+useradd -m -g users -G wheel -s /bin/{bash,zsh} imdol
+
+# enable wheel
+EDITOR=emacs visudo
+
+# creating swapfiles
+dd if=/dev/zero of=/swapfile bs=1M count=4096 status=progress
+chmod 0600 /swapfile
+mkswap -U clear /swapfile
+swapon /swapfile
+
+# iwd settings in /etc/iwd/main.conf
+[General]
+EnableNetworkConfiguration=true
+# use when traveling
+# AddressRandomization=network
+
+[Network]
+NameResolvingService=systemd
+RoutePriorityOffset=300
+EnableIPv6=false
+
+# enable net
+systemctl enable systemd-networkd
+systemctl enable systemd-resolved
+systemctl enable iwd
