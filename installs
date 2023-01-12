@@ -1,5 +1,5 @@
 # init packages
-zsh pulseaudio pulseaudio-alsa xorg xorg-server iwd git bspwm sxhkd polybar rofi dunst alacritty neofetch openssh emacs vi linux-headers linux-firmware linux sudo base base-devel gnupg cmake feh picom firefox docker docker-compose unzip ttf-hack
+zsh pulseaudio pulseaudio-alsa xorg xorg-server iwd git bspwm sxhkd polybar rofi dunst alacritty neofetch openssh emacs vi linux-headers linux-firmware linux sudo base base-devel gnupg cmake feh picom firefox docker docker-compose unzip ttf-hack libnotify wget curl
 
 # creating user
 useradd -m -g users -G wheel -s /bin/{bash,zsh} imdol
@@ -28,3 +28,4 @@ EnableIPv6=false
 systemctl enable systemd-networkd
 systemctl enable systemd-resolved
 systemctl enable iwd
+
