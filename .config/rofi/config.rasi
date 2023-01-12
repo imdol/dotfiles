@@ -4,8 +4,8 @@ configuration {
 }
 
 * {
-  	background-color:            rgb(18, 30, 37);
-	text-color:                  #d3d7cf;
+  	background-color:            rgb(40, 40, 40);
+	text-color:                  #ffffff;
 	selbg:                       rgb(0, 86, 136);
 	actbg:                       rgb(22, 37, 46);
 	urgbg:                       #e53935;
@@ -32,7 +32,7 @@ configuration {
 	hide-scrollbar:              "true";
 	margin:                      0px;
 	padding:                     0px;
-	font:            "Roboto medium 10";
+	font:            "Hack-Regular 11";
 }
 
 window {
@@ -64,7 +64,7 @@ inputbar {
      children: [ entry ];
 }
 
-textbox-prompt-colon {                                                
+textbox-prompt-colon {
      text-color: inherit;
      expand: false;                                                    
      margin: 0 0 0 0;
@@ -89,7 +89,7 @@ entry {
 	background-color: 	rgb(25, 41, 51);
 	vertical-align: 	0;
 	padding:        	0px;
-	font:            	"Roboto medium 10";
+	font:            	"Hack-Regular 11";
 	
 }
 
