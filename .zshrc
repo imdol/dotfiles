@@ -1,4 +1,4 @@
-PROMPT='%F{51}%n%F{9}@%F{49}%m:%F{15}%~%F{9}%# %F{15}'
+PROMPT='%F{51}%n%F{9}@%B%F{49}%m%b:%F{15}%~%F{9}%# %F{15}'
 
 # bash color prompt
 if [ $(command -v rg) ]; then
