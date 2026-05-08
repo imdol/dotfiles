@@ -1,9 +1,9 @@
-PROMPT='%F{51}%n%F{9}@%B%F{49}%m%b:%F{15}%~%F{9}%# %F{15}'
+PROMPT='%F{15}%n%F{9}@%B%F{15}%m%b:%F{15}%~%F{9}%# %F{15}'
 
-# bash color prompt
-if [ $(command -v rg) ]; then
-    alias grep='rg'
-fi
+fpath=(~/.zsh $fpath)
+
+autoload -Uz compinit
+compinit
 
 if [ $(command -v xclip) ]; then
     alias c='xclip'
@@ -11,7 +11,13 @@ if [ $(command -v xclip) ]; then
 fi
 
 alias ls='ls --color'
-alias emocs='emacs -nw -q'
+alias emocs='emacs -nw -Q'
 
-autoload -Uz compinit
-compinit
+export PATH=$PATH:$(go env GOPATH)/bin # go bin
+export PATH=$PATH:$HOME/.nvm/versions/node/v25.9.0/bin/ # node bin
+. "$HOME/.cargo/env" # cargo bin
+
+export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+. "/home/$USER/.deno/env"
