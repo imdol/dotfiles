@@ -1,0 +1,32 @@
+[global]
+    # Window Appearance
+    width = 300
+    height = 100
+    offset = 30x50
+    origin = top-right
+    transparency = 10
+    font = Monospace 10
+    
+    # Progress Bar (optional)
+    progress_bar = true
+    progress_bar_height = 10
+    
+    # Interaction
+    mouse_left_click = close_current
+    mouse_middle_click = do_action, close_current
+
+[urgency_low]
+    background = "#222222"
+    foreground = "#888888"
+    timeout = 10
+
+[urgency_normal]
+    background = "#285577"
+    foreground = "#ffffff"
+    timeout = 20
+
+[urgency_critical]
+    background = "#900000"
+    foreground = "#ffffff"
+    frame_color = "#ff0000"
+    timeout = 0

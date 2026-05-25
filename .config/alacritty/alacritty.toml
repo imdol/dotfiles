@@ -1,0 +1,31 @@
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+
+[window]
+opacity = 0.8
+
+[font]
+size = 12.0
+offset.x = -1
+
+[font.normal]
+family = "Hack"
+style = "Regular"
+
+[font.bold]
+family = "Hack"
+style = "Bold"
+
+[font.italic]
+family = "Hack"
+style = "Italic"
+
+[font.bold_italic]
+family = "Hack"
+style = "Bold Italic"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"

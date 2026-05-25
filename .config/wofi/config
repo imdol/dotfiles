@@ -1,0 +1,17 @@
+# ~/.config/wofi/config
+
+# Use drun mode to search and read .desktop files
+mode=drun
+
+# Appearance
+width=400
+height=400
+location=center
+
+# Display settings
+allow_images=true
+image_size=32
+insensitive=true
+
+# Show generic names (like "Text Editor" next to "gedit")
+display_generic=true

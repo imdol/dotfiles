@@ -1,0 +1,3 @@
+GOBIN=/home/imdol/.go/bin
+GOPATH=/home/imdol/.go
+GOPROXY=https://goproxy.io,direct

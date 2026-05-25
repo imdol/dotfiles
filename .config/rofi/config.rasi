@@ -32,7 +32,7 @@ configuration {
 	hide-scrollbar:              "true";
 	margin:                      0px;
 	padding:                     0px;
-	font:            "Hack-Regular 11";
+	font:            "Hack-Regular 16";
 }
 
 window {
@@ -89,7 +89,7 @@ entry {
 	background-color: 	rgb(25, 41, 51);
 	vertical-align: 	0;
 	padding:        	0px;
-	font:            	"Hack-Regular 11";
+	font:            	"Hack-Regular 16";
 	
 }
 
