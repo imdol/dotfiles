@@ -5,13 +5,22 @@ mode=drun
 
 # Appearance
 width=400
-height=400
-location=center
+height=200
+location=top
 
 # Display settings
 allow_images=true
-image_size=32
+image_size=18
 insensitive=true
 
 # Show generic names (like "Text Editor" next to "gedit")
 display_generic=true
+
+key_up=Ctrl-p
+key_down=Ctrl-n
+key_left=Ctrl-b
+key_right=Ctrl-f
+key_submit=Return
+key_exit=Ctrl-g
+
+style=./style.css

@@ -1,0 +1,25 @@
+/* Overall container background */
+#outer-box {
+    background-color: #1e1e2e;
+}
+
+/* Background of the search input field */
+#input {
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+/* Background of the search results list */
+#scroll {
+    background-color: #1e1e2e;
+}
+
+/* Background of individual items */
+#entry {
+    background-color: #1e1e2e;
+}
+
+/* Background when hovering or highlighting with arrow keys */
+#entry:selected {
+    background-color: #45475a;
+}

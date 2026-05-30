@@ -2,7 +2,7 @@
 {
   // "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 20, // Waybar height (to be removed for auto height)
+  "height": 25, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   "spacing": 0, // Gaps between modules (4px)
   // Choose the order of the modules
@@ -52,7 +52,14 @@
   // },
   "sway/window": {
     "format": "{}",
-    "max-length": 50
+    "max-length": 50,
+    // "icon": true,
+    // "icon-size": 15,
+    "rewrite": {
+      "(.*) - Mozilla Firefox": "🌎 $1",
+      "(.*) - Visual Studio Code": "💻 $1",
+      "(.*) - foot": "🐚 $1"
+    }
   },
   "keyboard-state": {
     "numlock": true,

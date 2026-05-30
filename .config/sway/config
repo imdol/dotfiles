@@ -14,12 +14,13 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term alacritty
 # Your preferred application launcher
 set $menu wofi
 
-font pango:LiberationMono 10
-output eDP-1 mode 2880x1800@122Hz
+font pango:Hack 12
+output eDP-1 scale 1.5
+output eDP-1 mode 2880x1800@60Hz
 
 ### Output configuration
 #
@@ -75,6 +76,9 @@ input * {
 #       xkb_layout "eu"
 #   }
 #
+input "type:keyboard" {
+    xkb_options "ctrl:nocaps"
+}
 # You can also configure each device individually.
 # Read `man 5 sway-input` for more information about this section.
 
