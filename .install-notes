@@ -1,5 +1,5 @@
 # init packages
-zsh pipewire pipewire-pulse pipewire-alsa wireplumber iwd git sway waybar wev wofi mako alacritty openssh emacs vi linux-headers linux-firmware linux sudo base base-devel gnupg cmake feh docker unzip ttf-hack libnotify wget curl brightnessctl acpi grim slurp wl-clipboard
+zsh pipewire pipewire-pulse pipewire-alsa wireplumber iwd git sway waybar wev wofi mako alacritty openssh emacs vi linux-headers linux-firmware linux sudo base base-devel gnupg cmake feh docker unzip ttf-hack mako libnotify wget curl brightnessctl acpi grim slurp wl-clipboard
 
 # creating user
 useradd -m -g users -G wheel -s /bin/{bash,zsh} anon

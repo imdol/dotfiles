@@ -1,0 +1,13 @@
+# Position and sizing
+max-visible=5
+anchor=top-right
+
+# Styling
+background-color=#000000
+text-color=#fffffff
+border-size=2
+border-color=#61afefff
+border-radius=5
+
+# Timeout (in milliseconds)
+default-timeout=5000

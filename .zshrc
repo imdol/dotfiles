@@ -15,11 +15,14 @@ fi
 
 alias ls='ls --color'
 
-# export PATH=$PATH:$(go env GOPATH)/bin # go bin
-# export PATH=$PATH:$HOME/.nvm/versions/node/v25.9.0/bin/ # node bin
-# export NVM_DIR="$HOME/.nvm"
+export PATH=$PATH:$(go env GOPATH)/bin # go bin
+export PATH="$HOME/.local/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=$PATH:$HOME/.nvm/versions/node/v26.5.1/bin/ # node bin
 
 . "$HOME/.cargo/env" # cargo bin
 . "$HOME/.deno/env" # deno bin
+
+# EAS_AC_ZSH_SETUP_PATH=/home/imdol/.cache/eas-cli/autocomplete/zsh_setup && test -f $EAS_AC_ZSH_SETUP_PATH && source $EAS_AC_ZSH_SETUP_PATH; # eas autocomplete setup
